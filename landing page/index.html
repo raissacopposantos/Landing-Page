@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            margin: 0; padding: 0;
+            background: #f0f4f8;
+            color: #333;
+        }
+        header {
+            background: #005f73;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            margin: 0; font-size: 1.8em;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+        nav a: hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0a9396;
+        }
+        img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 15px 0;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            text-align: center;
+            padding: 8px;
+        }
+        th{
+            background: #94d2bd;
+        }
+        form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 7px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form input [type="radio"], form input [type="checkbox"] {
+            width: auto;
+        }
+        form button {
+            margin-top: 15pt;
+            background: #005f73;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        form button: :hover {
+            background: #0a9396
+        }
+        audio, video {
+            margin-top: 10px;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .hobbies-list {
+            list-style: square inside;
+        }
+        @media(max-width:600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav a {
+                margin: 10px 10px 0 10px;
+            }
+            img {
+                max-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Raíssa</h1>
+    <nav>
+        <a href="#home" onclick="showPage('home')">Home</a>
+        <a href="#curriculo" onclick="showPage('curriculo')">Curriculo</a>
+        <a href="#github" onclick="showPage('github')">Github</a>
+        <a href="#servicos" onclick="showPage('servicos')">Servicos</a>
+        <a href="#contato" onclick="showPage('contato')">Contato</a>
+    </nav>
+    </header>
+
+    <main>
+        <!-- Página Home-->
+         <section id="home" class="page">
+            <h2>Olá! Eu sou Raíssa</h2>
+            <img src="" alt="">
+            <p>Sou estudante de Sistemas de Informação na Universidade Vila Velha - UVV, .</p>
+            <h3>Objetivos Profissionais</h3>
+            <p>Quero me tornar</p>
+            <h3>Habilidades Pessoais</h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            <h3>Hobbies e Interesses</h3>
+                <ul class="hobbies-list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            <audio controls>
+                <source src="" type=""/>
+            </audio>
+            <h3>Histórico Acadêmico</h3>
+            <p>Fiz o ensino fundamental e o primeiro e segundo ano do médio na Escola SEB, ainda estou completando o terceiro ano do ensino médio na Escola SEB. Atualmente estudo Sistemas de Informação na Universidade Vila Velha - UVV.</p>
+            <h3>Eventos que participei</h3>
+            <p></p>
+            <h3>Matérias atuais e resumo</h3>
+                <ul>
+                    <li>Construção de Software para Web: foca em criar sites e aplicações web, programando tanto a interface que o usuário vê (front-end) quanto a lógica do servidor (back-end).</li>
+                    <li>Design e Desenvolvimento de Banco de Dados I: ensina a modelar, criar e gerenciar bancos de dados usando a linguagem SQL para armazenar e organizar informações de forma eficiente.</li>
+                    <li>Experiência e Interface com o Usuário: trata de projetar sistemas fáceis e agradáveis de usar, focando em como o usuário se sente e interage com a tecnologia.</li>
+                    <li>Fundamentos de Tecnologia da Computação: apresenta os conceitos básicos de hardware, software e como os computadores representam e processam informações.</li>
+                    <li>Lógica para Computação: desenvolve o raciocínio lógico formal, essencial para a construção de algoritmos e a resolução de problemas em programação.</li>
+                    <li>Textos Científicos: Aspectos Metodológicos e Linguísticos: ensina a escrever e formatar trabalhos acadêmicos e artigos científicos seguindo as normas e a estrutura da metodologia científica.</li>
+                </ul>
+            <h3>Planos para o Futuro</h3>
+            <p></p>
+            <video controls>
+                <source src="" type="">
+            </video>
+         </section>
+
+         <!-- Página Currículo -->
+          <section id="curriculo" class="page" style="display: none;">
+            <h2>Currículo Profissional</h2>
+            <p></p>
+          </section>
+
+        <!-- Página GitHub -->
+          <section id="github" class="page" style="display: none;">
+            <h2>Meu GitHub</h2>
+            <a href="" target="" rel="">
+                <img src="" alt="" style="width: 70px;">
+            </a>
+          </section>
+        
+        <!-- Página Serviços -->
+         <section id="servicos" class="page" style="display: none;">
+
+         </section>
+        
+        <!-- Página Contato-->
+         <section></section>
+    </main>
+</body>
+</html>
